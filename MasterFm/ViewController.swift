@@ -8,11 +8,19 @@
 
 import UIKit
 
+
 class ViewController: UIViewController {
 
+    @IBOutlet weak var label_radioname: UILabel!
+    @IBOutlet weak var prueba: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        self.label_radioname.layer.cornerRadius = 25
+        self.prueba.layer.cornerRadius = 25
+        
     }
 
 

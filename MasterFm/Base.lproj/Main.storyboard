@@ -1,24 +1,194 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dpV-tw-OO6">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="qLg-hr-cde">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="rGo-8W-BGL" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OgY-co-H1T">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LSC-Ac-Ama">
+                                <rect key="frame" x="0.0" y="728" width="414" height="95"/>
+                                <color key="backgroundColor" red="0.1019607843" green="0.0" blue="0.14117647059999999" alpha="0.75222067640000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="414" id="ep5-wu-FqI"/>
+                                    <constraint firstAttribute="height" constant="95" id="qJO-L8-BBO"/>
+                                </constraints>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MADRID  93.7 FM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6qj-Mv-fnX">
+                                <rect key="frame" x="123" y="101" width="168" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.1019607843" green="0.0" blue="0.14117647059999999" alpha="0.75222067640000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MASTER FM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d3D-pr-nFW">
+                                <rect key="frame" x="141" y="55" width="132" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="132" id="Fkx-vh-sVQ"/>
+                                    <constraint firstAttribute="height" constant="29" id="OmS-aj-ZOz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.41176470590000003" green="0.015686274510000001" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="d3D-pr-nFW" firstAttribute="centerY" secondItem="OgY-co-H1T" secondAttribute="centerY" constant="-337" id="nmM-Dp-GyW"/>
+                            <constraint firstItem="LSC-Ac-Ama" firstAttribute="centerY" secondItem="OgY-co-H1T" secondAttribute="centerY" constant="369" id="tlL-cJ-vpr"/>
+                            <constraint firstItem="d3D-pr-nFW" firstAttribute="centerX" secondItem="OgY-co-H1T" secondAttribute="centerX" id="un3-KV-8oh"/>
+                            <constraint firstItem="LSC-Ac-Ama" firstAttribute="centerX" secondItem="OgY-co-H1T" secondAttribute="centerX" id="zMG-4o-91A"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bWb-4A-idn"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="" image="music.note" catalog="system" id="TgM-jn-cnh"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fsV-5b-ZgL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1903" y="387"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Mxl-Cd-7i5">
+            <objects>
+                <viewController id="Idh-S1-9f7" customClass="ViewController" customModule="MasterFm" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vuk-tJ-sXW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="webblanco-masterfm" translatesAutoresizingMaskIntoConstraints="NO" id="WwM-en-D7s">
+                                <rect key="frame" x="67" y="276.5" width="280" height="260"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zOH-sy-rnc">
+                                <rect key="frame" x="0.0" y="728" width="414" height="95"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.10196078431372549" green="0.0" blue="0.14117647058823529" alpha="0.75222067636986301" colorSpace="custom" customColorSpace="sRGB"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MADRID  93.7 FM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H1p-7o-vhu">
+                                <rect key="frame" x="123" y="101" width="168" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.1019607843" green="0.0" blue="0.14117647059999999" alpha="0.75222067640000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S4B-Zr-k5M">
+                                <rect key="frame" x="318" y="751" width="51" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="jugar (1)"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Ni-SB-XD6">
+                                <rect key="frame" x="86.5" y="320.5" width="241" height="172"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.41176470590000003" green="0.015686274510000001" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="5AV-4f-oah"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="antenna.radiowaves.left.and.right" catalog="system" selectedImage="antenna.radiowaves.left.and.right" springLoaded="YES" id="0mF-lL-8Hl">
+                        <color key="badgeColor" red="0.37437146900000001" green="0.15202656389999999" blue="0.49848061799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBarItem>
+                    <connections>
+                        <outlet property="label_radioname" destination="H1p-7o-vhu" id="JNI-9K-6ls"/>
+                        <outlet property="prueba" destination="2Ni-SB-XD6" id="r2L-NC-IRL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="syN-Uz-2kC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1902.8985507246377" y="-789.50892857142856"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="grx-sc-OMD">
+            <objects>
+                <viewController id="2lI-Qx-u1T" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="baH-1F-DeF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L0J-D1-tD2">
+                                <rect key="frame" x="0.0" y="728" width="414" height="95"/>
+                                <color key="backgroundColor" red="0.1019607843" green="0.0" blue="0.14117647059999999" alpha="0.75222067640000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="414" id="FVc-fN-BlU"/>
+                                    <constraint firstAttribute="height" constant="95" id="IFc-CP-0pX"/>
+                                </constraints>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MADRID  93.7 FM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mbe-Ai-3ph">
+                                <rect key="frame" x="123" y="101" width="168" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.1019607843" green="0.0" blue="0.14117647059999999" alpha="0.75222067640000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MASTER FM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ESn-Ju-eLC">
+                                <rect key="frame" x="141" y="55" width="132" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="132" id="Mmw-AL-R2L"/>
+                                    <constraint firstAttribute="height" constant="28" id="Uim-gt-wud"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.41176470590000003" green="0.015686274510000001" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ESn-Ju-eLC" firstAttribute="centerY" secondItem="baH-1F-DeF" secondAttribute="centerY" constant="-337.5" id="K6Y-LQ-gls"/>
+                            <constraint firstItem="L0J-D1-tD2" firstAttribute="centerY" secondItem="baH-1F-DeF" secondAttribute="centerY" constant="369" id="YzF-sK-8Mi"/>
+                            <constraint firstItem="L0J-D1-tD2" firstAttribute="centerX" secondItem="baH-1F-DeF" secondAttribute="centerX" id="csl-1a-W8S"/>
+                            <constraint firstItem="ESn-Ju-eLC" firstAttribute="centerX" secondItem="baH-1F-DeF" secondAttribute="centerX" id="n8U-L8-xHb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Vr-IB-vwf"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="heart.fill" catalog="system" id="Kjm-Ya-REv"/>
+                    <navigationItem key="navigationItem" id="Kl8-PZ-pUW"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="klW-85-xSB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2703" y="-342"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="ODL-Sf-VYb">
+            <objects>
+                <tabBarController id="dpV-tw-OO6" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="oKT-px-OCx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.1019607843" green="0.0" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Idh-S1-9f7" kind="relationship" relationship="viewControllers" id="BGA-wm-6bl"/>
+                        <segue destination="rGo-8W-BGL" kind="relationship" relationship="viewControllers" id="hwH-Wx-2y5"/>
+                        <segue destination="2lI-Qx-u1T" kind="relationship" relationship="viewControllers" id="1gw-KL-gOE"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eY8-FW-8w3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="984" y="-342"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="antenna.radiowaves.left.and.right" catalog="system" width="128" height="109"/>
+        <image name="heart.fill" catalog="system" width="128" height="109"/>
+        <image name="jugar (1)" width="512" height="512"/>
+        <image name="music.note" catalog="system" width="97" height="128"/>
+        <image name="webblanco-masterfm" width="2100" height="1500"/>
+    </resources>
 </document>
