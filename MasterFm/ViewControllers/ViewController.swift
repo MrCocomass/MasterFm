@@ -11,8 +11,13 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var emisoralabel: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.emisoralabel.layer.cornerRadius = 20;
         
     }
 
